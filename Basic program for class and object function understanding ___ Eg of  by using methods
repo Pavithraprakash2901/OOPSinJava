@@ -1,0 +1,31 @@
+class emp{
+    
+    int r;
+    String name;
+    int age;
+    
+    void display()
+    {
+        System.out.println(r);
+        System.out.println(name);
+        System.out.println(age);
+    }
+    
+    void getval(int rl,String n,int a)
+    {
+       r=rl;
+       name=n;
+       age=a;
+    }
+}
+ class Main{
+    public static void main(String[] args)
+    {
+        emp obj = new emp();
+        obj.getval(1,"sam",3);
+        obj.display();
+        obj.getval(2,"ram",10);
+        obj.display();
+       
+    }
+}
