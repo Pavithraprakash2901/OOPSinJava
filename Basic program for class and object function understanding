@@ -1,0 +1,35 @@
+ class emp{
+    
+    int r;
+    String name;
+    int age;
+    
+    void display()
+    {
+        System.out.println(r);
+        System.out.println(name);
+        System.out.println(age);
+    }
+}
+ class Main{
+    public static void main(String[] args)
+    {
+        emp obj = new emp();
+        obj.r=1;
+        obj.name="abdul";
+        obj.age=20;
+        obj.display();
+        obj.r=2;
+        obj.name="aadhi";
+        obj.age=20;
+        obj.display();
+        
+        //or
+        
+        emp obj2 = new emp();
+        obj.r=3;
+        obj.name="pavi";
+        obj.age=20;
+        obj.display();
+    }
+}
