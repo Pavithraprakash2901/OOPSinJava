@@ -1,0 +1,32 @@
+// program for the understanding of constructors
+
+class Student
+{
+    int id;
+    String name;
+    String grade;
+    
+    Student(int a,String b,String c)
+    {
+        System.out.println("*******method constructor*******");
+        id = a;
+        name= b;
+        grade =c;
+    }
+    
+    void display()
+    {
+        System.out.println(id);
+        System.out.println(name);
+        System.out.println(grade);
+    }
+
+}
+
+class Main{
+    public static void main(String[] args)
+        {
+            Student s = new Student(1,"pavi","O");
+            s.display();
+        }
+}
