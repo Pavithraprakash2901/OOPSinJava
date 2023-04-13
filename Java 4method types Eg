@@ -1,0 +1,47 @@
+
+
+class Calculator
+{
+    int x =200,y=100,z;
+    
+    //1.not taking para and not return op
+    void sum()
+    {
+        System.out.print("the val of add is : " +(x+y));
+    }
+    
+    
+    //2.not taking param,and returning op
+    int sub()
+    {
+        z=x-y;
+        return z;
+    }
+    
+    //3.taking param and  not returning op
+    void mul(int a,int b)
+    {
+        System.out.println("the val of mul is"  +a*b);
+    }
+    
+    //4.taking param and returning op
+    int div(int a,int b)
+    {
+        x=a;y=b;
+        z= a/b;
+        return z;        
+    }
+}
+class Main{ 
+public static void main (String[] args) {
+    
+        Calculator ca = new Calculator();
+        int a=100,b=10,c;
+        ca.sum();
+        c=ca.sub();
+        System.out.println("\nthe value of sub is :" +c);
+        ca.mul(a,b);
+        c=ca.div(a,b);
+        System.out.println("the div val is : " +c);
+    }
+}
