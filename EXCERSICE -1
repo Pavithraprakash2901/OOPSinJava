@@ -1,0 +1,52 @@
+ /* 1) Create a Student class contains the following variables and methods.
+Class Name: Student
+Variables : SID , Sname, Sub1,Sub2,Sub3
+
+Methods:
+getStuData()  Takes student details SID and Sname  as parameters and assign them to variables.
+getStuMarks() Takes student marks as parameters and assign them to Sub1, Sub2, Sub3.
+totalMarks()  Calculate total marks and print the student details with total marks. 
+
+Now, create objects from Student class stu1, stu2 etc.  Then call Student class methods.
+*/
+
+
+class Student{
+    int sid;
+    String sname;
+    int s1,s2,s3,t;
+    
+     void getdata(int id, String name)
+     {
+         sid = id;
+         sname = name;
+        
+         System.out.println(sid +"\n" +sname +"\n");
+     }
+     
+     void getm(int a,int b, int c)
+     {
+          s1=a;s2=b;s3=c;
+          System.out.println(s1 +"\n" +s2 +"\n" +s3 +"\n");
+     }
+    void tm(int a,int b, int c,int id,String name)
+    {
+        getdata(id,name);
+        s1=a;s2=b;s3=c;
+       t=s1+s2+s3;
+       System.out.println(t);
+    }
+}
+class Main
+{
+    public static void main(String[] args)
+    {
+      Student s = new Student();
+      int id=1;
+      String name = "Sam";
+      int a=99,b=98,c=100;
+      s.getdata(id,name);
+      s.getm(a,b,c);
+      s.tm(a,b,c,id,name);
+    }
+}
