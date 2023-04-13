@@ -1,0 +1,37 @@
+/* 2) Write a program to demonstrate constructor.
+
+Create a class ‘Calculation’ with 3 integer variable.
+Create a constructor for assign the values into variables.
+Then create another method ‘sum’ to calculate sum of 3 numbers.
+
+Now, create object and call constructor by passing 3 integer values then call sum method.
+ */
+ 
+ 
+ class Calculator 
+{
+    int x;
+    int y;
+    int z;
+    double zee;
+    
+    Calculator(int a,int b,int c)
+    {
+        x=a;y=b;z=c;
+    }
+    
+    int sum()
+    {
+       return x+y+z;
+    }
+}
+class Main
+{
+    public static void main(String[] args)
+    {
+        int a=10,b=10,c=10;
+        Calculator cs = new Calculator(a,b,c);
+        int res=cs.sum();
+        System.out.println(res);
+    }
+}
